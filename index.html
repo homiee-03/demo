@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase Auth Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card">
+        <h1>Firebase Authentication</h1>
+        <p class="subtitle">Email &amp; Password (No Backend)</p>
+
+        <label class="field">
+          <span>Email</span>
+          <input id="email" type="email" placeholder="you@example.com" autocomplete="email" />
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <input
+            id="password"
+            type="password"
+            placeholder="••••••••"
+            autocomplete="current-password"
+          />
+        </label>
+
+        <div class="actions">
+          <button id="sign-up" type="button">Sign Up</button>
+          <button id="sign-in" type="button">Sign In</button>
+          <button id="sign-out" type="button" class="secondary" disabled>Sign Out</button>
+        </div>
+
+        <p id="status" class="status">Waiting for authentication state...</p>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
