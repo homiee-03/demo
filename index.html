@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase Auth Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <section class="auth-card">
+        <header class="auth-header">
+          <h1 id="auth-title">Sign in</h1>
+          <p id="auth-subtitle">Access your learning dashboard.</p>
+        </header>
+
+        <div id="message" class="message" data-type="info">Enter your details to continue.</div>
+
+        <form id="login-screen" class="screen active" autocomplete="on">
+          <label class="field">
+            <span>Email</span>
+            <input id="login-email" type="email" placeholder="you@example.com" required />
+          </label>
+
+          <label class="field">
+            <span>Password</span>
+            <input id="login-password" type="password" placeholder="••••••••" required />
+          </label>
+
+          <button type="submit" class="primary">Sign In</button>
+          <button type="button" class="link" data-target="reset-screen">Forgot password?</button>
+          <button type="button" class="link" data-target="signup-screen">Create account</button>
+        </form>
+
+        <form id="signup-screen" class="screen" autocomplete="on">
+          <label class="field">
+            <span>Email</span>
+            <input id="signup-email" type="email" placeholder="you@example.com" required />
+          </label>
+
+          <label class="field">
+            <span>Password</span>
+            <input id="signup-password" type="password" placeholder="At least 6 characters" required />
+          </label>
+
+          <button type="submit" class="primary">Create Account</button>
+          <button type="button" class="link" data-target="login-screen">Already have an account? Sign in</button>
+        </form>
+
+        <form id="reset-screen" class="screen" autocomplete="on">
+          <label class="field">
+            <span>Email</span>
+            <input id="reset-email" type="email" placeholder="you@example.com" required />
+          </label>
+
+          <button type="submit" class="primary">Send Reset Link</button>
+          <button type="button" class="link" data-target="login-screen">Back to sign in</button>
+        </form>
+
+        <section id="dashboard-screen" class="screen">
+          <div class="dashboard-header">
+            <div>
+              <h2>Dashboard</h2>
+              <p id="user-email">Logged in as</p>
+            </div>
+            <button id="logout" type="button" class="secondary">Log Out</button>
+          </div>
+
+          <div class="dashboard-section">
+            <h3>Courses</h3>
+            <div class="empty-state"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
