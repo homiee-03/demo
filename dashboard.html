@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAURAV AI Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dashboard-body">
+    <header class="dashboard-topbar">
+      <div class="brand">
+        <span class="brand-mark">GAURAV AI</span>
+      </div>
+      <div class="topbar-actions">
+        <span id="dashboard-email" class="user-email">Loading...</span>
+        <button id="logout" type="button" class="secondary">Log Out</button>
+      </div>
+    </header>
+
+    <main class="dashboard-main">
+      <section class="dashboard-panel">
+        <div class="panel-header">
+          <h1>Available Courses</h1>
+          <p>Choose the right learning path for you.</p>
+        </div>
+        <div id="dashboard-message" class="message hidden" data-type="info"></div>
+
+        <div class="course-grid">
+          <article class="course-card">
+            <div>
+              <h2>Starter Access</h2>
+              <p class="price">₹51</p>
+              <p class="note">Entry-level access</p>
+            </div>
+            <button class="primary buy-button" type="button">Buy Now</button>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <h2>Foundation AI Course</h2>
+              <p class="price">₹999</p>
+            </div>
+            <button class="primary buy-button" type="button">Buy Now</button>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <h2>Advanced AI Course</h2>
+              <p class="price">₹1999</p>
+            </div>
+            <button class="primary buy-button" type="button">Buy Now</button>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <h2>Mastery AI Program</h2>
+              <p class="price">₹9999</p>
+            </div>
+            <button class="primary buy-button" type="button">Buy Now</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard-panel">
+        <div class="panel-header">
+          <h2>My Classes</h2>
+          <p>Classes will appear here after enrollment.</p>
+        </div>
+        <div class="classes-empty"></div>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
